@@ -51,5 +51,6 @@ src/
 
 ## Screenshot
 <img width="954" height="434" alt="image" src="https://github.com/user-attachments/assets/dcd13acd-b7a5-4f48-9b97-069558a9f46a" />
-<img width="951" height="454" alt="image" src="https://github.com/user-attachments/assets/b0eae16a-878a-4193-9452-f22480c1e622" />
+<img width="951" height="295" alt="image" src="https://github.com/user-attachments/assets/3d4bbb7a-be1d-4ebd-97e8-6c38add5f783" />
+
 
