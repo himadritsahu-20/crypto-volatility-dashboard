@@ -48,3 +48,8 @@ src/
 
 ## Related
 - **Backend API:** [crypto-volatility-api](https://github.com/himadritsahu-20/crypto-volatility-api)
+
+## Screenshot
+<img width="954" height="434" alt="image" src="https://github.com/user-attachments/assets/dcd13acd-b7a5-4f48-9b97-069558a9f46a" />
+<img width="951" height="454" alt="image" src="https://github.com/user-attachments/assets/b0eae16a-878a-4193-9452-f22480c1e622" />
+
