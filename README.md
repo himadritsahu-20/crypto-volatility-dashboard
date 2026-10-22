@@ -1,16 +1,50 @@
-# React + Vite
+# CryptoVolPro — Crypto Volatility Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite)
+![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify)
 
-Currently, two official plugins are available:
+**Live Demo:** [https://crypto-volatility-dashboard.netlify.app](https://crypto-volatility-dashboard.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
+Dark-mode trading dashboard that communicates with a FastAPI ML backend to predict **crypto volatility** in real time.
 
-## React Compiler
+### UI Features
+- Live backend status indicator
+- Dynamic 12-feature input form (auto-loaded from `/model-info`)
+- Animated probability gauge with threshold marker
+- Risk level meter (Minimal → High)
+- Prediction history log
+- Fully responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **React 18 + Vite**
+- **Vanilla CSS** (trading-terminal dark theme)
+- **Netlify** (CI/CD from GitHub)
+- **Backend:** FastAPI + scikit-learn (separate repo)
 
-## Expanding the Oxlint configuration
+## Quick Start
+```bash
+git clone https://github.com/himadritsahu-20/crypto-volatility-dashboard.git
+cd crypto-volatility-dashboard
+npm install
+npm run dev
+```
+## Environment
+VITE_API_URL=https://crypto-volatility-api-645g.onrender.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Structure
+src/
+├── api.js                 # Backend calls
+├── App.jsx / App.css      # Main layout + theme
+└── components/
+    ├── Header.jsx
+    ├── StatsRibbon.jsx
+    ├── PredictionForm.jsx
+    ├── ProbabilityGauge.jsx
+    ├── RiskMeter.jsx
+    ├── ResultDisplay.jsx
+    └── PredictionHistory.jsx
+
+## Related
+- **Backend API:** [crypto-volatility-api](https://github.com/himadritsahu-20/crypto-volatility-api)
